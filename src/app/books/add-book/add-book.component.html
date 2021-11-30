@@ -1,0 +1,83 @@
+<h1>Add book</h1>
+<form [formGroup]="bookForm" (submit)="saveBook()">
+    
+    <div class="row">
+        <div class="col-4 mb-2">
+            <label class="form-label">title</label>
+            <input type="text" name="title" class="form-control" formControlName="title">
+            <label class="form-label">subtitle</label>
+            <input type="text" name="subtitle" class="form-control" formControlName="subtitle">
+        </div>
+        <div class="col-4 mb-2">
+            <label class="form-label">ISBN10</label>
+            <input type="text" name="ISBN10" class="form-control" formControlName="ISBN10">
+            <label class="form-label">ISBN13</label>
+            <input type="text" name="ISBN13" class="form-control" formControlName="ISBN13">
+        </div>
+        <div class="col-4 mb-2">
+            <label class="form-label">series</label>
+            <input type="text" name="series" class="form-control" formControlName="series">
+            <label class="form-label">publisher</label>
+            <input type="text" name="publisher" class="form-control" formControlName="publisher">
+        </div>
+        <div class="col-8 mb-2">
+            <label class="form-label">Authors</label>
+            <input type="text" name="Authors" class="form-control" formControlName="Authors">
+        </div>
+        <div class="col-8 mb-2">
+            <label class="form-label">Genres</label>
+            <input type="text" name="Genres" class="form-control" formControlName="Genres">
+        </div>
+        <div class="col-4 mb-2">
+            <label class="form-label">edition</label>
+            <input type="text" name="edition" class="form-control" formControlName="edition">
+        </div>
+        <div class="col-2 mb-2">
+            <label class="form-label">published years</label>
+            <input type="text" name="publishedYear" class="form-control" formControlName="publishedYear">
+            <label class="form-label">pages</label>
+            <input type="text" name="pages" class="form-control" formControlName="pages">
+        </div>
+        <div class="col-2 mb-2">
+            <label class="form-label">type</label>
+            <select>type
+                <option>stadard</option>
+                <option>/option>
+            </select>
+            <label class="form-label">physicalform</label>
+            <select>physicalform
+                <option>books</option>
+                <option>newspaper</option>
+            </select>
+            <label class="form-label">size</label>
+            <select>size
+                <option>small</option>
+                <option>medium</option>
+                <option>large</option>
+            </select>
+            <label class="form-label">binding</label>
+            <select>binding
+                <option>softcover</option>
+                <option></option>
+            </select>
+        </div>
+        <div class="col-3 mb-2">
+            <label class="form-label">Quantity</label>
+            <input type="text" class="form-control" formControlName="Quantity" name="Quantity">
+            <label class="form-label">Price(USD)</label>
+            <input type="text" class="form-control" formControlName="Price(USD)" name="Price(USD)">
+            <label class="form-label">Language</label>
+            <input type="text" class="form-control" formControlName="Language" name="Language">
+
+        </div>
+        <textarea>description</textarea>
+        <div class="col-12 mb-2">
+            <label class="form-label">Notes</label>
+            <input type="text" name="Notes" class="form-control" formControlName="Notes">
+
+        </div>
+        <div class="col-12 mb-2">
+            <button class="btn btn-outline-secondary float-end">save</button>
+        </div>
+    </div>
+</form>

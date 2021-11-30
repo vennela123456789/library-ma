@@ -1,0 +1,12 @@
+<form [formGroup]="genreForm" (submit)="savegenre()">
+<div class="row">
+    <div class="col-12">
+        <h1>Add Genre</h1>
+<label  class="form-label">title<em class="text-danger"></em></label>
+<input type="text" name="title" class="form-control" formControlName="title">
+<small class="text-danger" *ngif="genreForm.controls.title .touched && genreForm.controls.title.errors?.required">title required</small>
+<button class="btn btn-outline-secondary float-end" [disabled]="genreForm.invalid"><i class="far fa-save"></i>save</button>
+</div>
+</div>
+
+</form>
